@@ -1,7 +1,8 @@
 .bottom_border {
+  border-bottom: 10px solid black;
+}
 
-
-border-bottom: 10px solid black;
-
+.right_border {
+  border-right: 10px solid black;
 }
 
