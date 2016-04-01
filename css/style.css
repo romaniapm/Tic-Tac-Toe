@@ -14,9 +14,15 @@
   border-top: 10px solid black;
 }
 
-table{
+table {
   border-collapse: collapse;
   border-spacing:0;
 }
 
-.
+h1 {
+  color:blue;
+  font-size: 30px;
+  text-decoration: underline;
+  font-style: italic;
+
+}
