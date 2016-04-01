@@ -1,8 +1,7 @@
+.bottom_border {
 
 
-.box{
-    width: 600px;
-    height: 400px;
-    background-color: lavender;
-    border: solid 1px silver;
+border-bottom: 10px solid black;
+
 }
+
