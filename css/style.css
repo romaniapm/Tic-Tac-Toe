@@ -6,3 +6,15 @@
   border-right: 10px solid black;
 }
 
+.left_border {
+  border-left: 10px solid black;
+}
+
+.top_border {
+  border-top: 10px solid black;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing:0;
+}
