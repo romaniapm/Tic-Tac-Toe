@@ -7,11 +7,12 @@
 
 <title>TIC TAC TOE</title>
 
+
 </head>
 
 <body>
 
-  <h1>TIC TAC TOE</h1>
+  <h1>TIC TAC TOE CUBE</h1>
 
   <p>Instructions</p>
 
@@ -24,25 +25,32 @@
    <div id="tic-tac-toe">
     <table>
       <tr id="row1">
-        <td class="bottom_border right_border">X</td>
-        <td class="bottom_border right_border left_border">O</td>
-        <td class="bottom_border left_border">X</td>
+        <td id="topleft" class="bottom_border right_border">X</td>
+        <td id="topcenter" class="bottom_border right_border left_border">O</td>
+        <td id="topright" class="bottom_border left_border">X</td>
 
       </tr>
       <tr id="row2">
-        <td class="bottom_border right_border top_border">O</td>
-        <td class="bottom_border right_border left_border top_border">X</td>
-        <td class="bottom_border left_border top_border">O</td>
+        <td id="middleleft" class="bottom_border right_border top_border">O</td>
+        <td id="middlecenter" class="bottom_border right_border left_border top_border">X</td>
+        <td id="middleright" class="bottom_border left_border top_border">O</td>
       </tr>
       <tr id="row3">
-        <td class="right_border top_border">X</td>
-        <td class="right_border left_border top_border">O</td>
-        <td class="left_border top_border">X</td>
+        <td id="bottomleft" class="right_border top_border">X</td>
+        <td id="bottomcenter" class="right_border left_border top_border">O</td>
+        <td id="bottomright" class="left_border top_border">X</td>
       </tr>
     </table>
   </div>
 
+<!-- 7 Apr 2016 Changing Tic Tac Toe to a cube format.
+Centered text. Added script.js. Added jQuery url on all three pages.
+  -->
 
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- for jquery only, put in head script> src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js> -->
+  </script>
 
 </body>
 </html>

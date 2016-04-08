@@ -1,3 +1,6 @@
+
+
+
 .bottom_border {
   border-bottom: 10px solid black;
 }
@@ -22,9 +25,13 @@ table {
 h1 {
   color:blue;
   font-size: 30px;
-  text-decoration: underline;
   font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  text-decoration:
+
 }
+
 
 td {
   width:200px;
