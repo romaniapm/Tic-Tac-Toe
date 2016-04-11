@@ -1,8 +1,13 @@
 
+#background{
+    background-image: url(file:///Users/passion/Desktop/Tic%20Tac%20Toe%20Image.jpg)
+}
+
 
 
 .bottom_border {
   border-bottom: 10px solid black;
+
 }
 
 .right_border {
@@ -20,6 +25,7 @@
 table {
   border-collapse: collapse;
   border-spacing:0;
+
 }
 
 h1 {
@@ -34,7 +40,7 @@ h1 {
 
 
 td {
-  width:200px;
+  width:300px;
   height:200px;
   text-align: center;
   font-size: 50px;
