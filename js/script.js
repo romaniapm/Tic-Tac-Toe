@@ -10,67 +10,51 @@ function activePlayer() {
   activeplayer = player1;
 }}
 
-function setXO(box) {
-  if (box.innerHTML.length === 0){
-    box.innerHTML = activeplayer.token;
+function setXO() {
+  if (this.innerHTML.length === 0){
+    this.innerHTML = activeplayer.token;
     activePlayer();
     checkWinner();
   }
 }
 
 var box1 = document.getElementById("topleft");
-box1.addEventListener("click", function(){
-  setXO(box1);
-});
+// box1.addEventListener("click", function(){
+//   setXO(box1);
+// });
+box1.addEventListener("click", setXO);
 
 
 var box2 = document.getElementById("topcenter");
-box2.addEventListener("click", function(){
-  setXO(box2);
-});
+box2.addEventListener("click", setXO);
 
 
 var box3 = document.getElementById("topright");
-box3.addEventListener("click", function(){
-  setXO(box3);
-});
+box3.addEventListener("click", setXO);
 
 
 var box4 = document.getElementById("middleleft");
-box4.addEventListener("click", function(){
-  setXO(box4);
-
-});
+box4.addEventListener("click", setXO);
 
 
 var box5 = document.getElementById("middlecenter");
-box5.addEventListener("click", function(){
-  setXO(box5);
-});
+box5.addEventListener("click", setXO);
 
 
 var box6 = document.getElementById("middleright");
-box6.addEventListener("click", function(){
-  setXO(box6);
-});
+box6.addEventListener("click", setXO);
 
 
 var box7 = document.getElementById("bottomleft");
-box7.addEventListener("click", function(){
-  setXO(box7);
-});
+box7.addEventListener("click", setXO);
 
 
 var box8 = document.getElementById("bottomcenter");
-box8.addEventListener("click", function(){
-  setXO(box8);
-});
+box8.addEventListener("click", setXO);
 
 
 var box9 = document.getElementById("bottomright");
-box9.addEventListener("click", function(){
-  setXO(box9);
-});
+box9.addEventListener("click", setXO);
 
 function checkWinner (){
   // this is for the top row
