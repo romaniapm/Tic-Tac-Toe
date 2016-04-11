@@ -13,17 +13,15 @@ function activePlayer() {
 var box1 = document.getElementById("topleft");
 box1.addEventListener("click", function(){
   box1.innerHTML = activeplayer.token;
-
-// if activeplayer =player1, then = player2
-
-activePlayer();
-
+  activePlayer();
+  checkWinner();
 });
 
 var box2 = document.getElementById("topcenter");
 box2.addEventListener("click", function(){
-   box2.innerHTML = activeplayer.token;
- activePlayer();
+  box2.innerHTML = activeplayer.token;
+  activePlayer();
+  checkWinner();
 });
 
 
@@ -31,15 +29,16 @@ box2.addEventListener("click", function(){
 var box3 = document.getElementById("topright");
 box3.addEventListener("click", function(){
   box3.innerHTML = activeplayer.token;
- activePlayer();
+  activePlayer();
+  checkWinner();
 });
-
 
 
 var box4 = document.getElementById("middleleft");
 box4.addEventListener("click", function(){
   box4.innerHTML = activeplayer.token;
- activePlayer();
+  activePlayer();
+  checkWinner();
 });
 
 
@@ -47,7 +46,8 @@ box4.addEventListener("click", function(){
 var box5 = document.getElementById("middlecenter");
 box5.addEventListener("click", function(){
   box5.innerHTML = activeplayer.token;
- activePlayer();
+  activePlayer();
+  checkWinner();
 });
 
 
@@ -55,7 +55,8 @@ box5.addEventListener("click", function(){
 var box6 = document.getElementById("middleright");
 box6.addEventListener("click", function(){
   box6.innerHTML = activeplayer.token;
- activePlayer();
+  activePlayer();
+  checkWinner();
 });
 
 
@@ -63,7 +64,8 @@ box6.addEventListener("click", function(){
 var box7 = document.getElementById("bottomleft");
 box7.addEventListener("click", function(){
   box7.innerHTML = activeplayer.token;
- activePlayer();
+  activePlayer();
+  checkWinner();
 });
 
 
@@ -71,7 +73,8 @@ box7.addEventListener("click", function(){
 var box8 = document.getElementById("bottomcenter");
 box8.addEventListener("click", function(){
   box8.innerHTML = activeplayer.token;
- activePlayer();
+  activePlayer();
+  checkWinner();
 });
 
 
@@ -79,8 +82,29 @@ box8.addEventListener("click", function(){
 var box9 = document.getElementById("bottomright");
 box9.addEventListener("click", function(){
   box9.innerHTML = activeplayer.token;
- activePlayer();
+  activePlayer();
+  checkWinner();
 });
+
+function checkWinner (){
+  // this is for the top row
+  if (box1.innerHTML === box2.innerHTML && box2.innerHTML === box3.innerHTML && box1.innerHTML.length > 0) {
+    if(box1.innerHTML=== "X") {
+      alert("player1 is the winner")
+    } else {
+      alert("player2 is the winner")
+    }
+  }
+
+  // this is for the middle row
+  if (box4.innerHTML === box5.innerHTML && box5.innerHTML === box6.innerHTML && box4.innerHTML.length > 0) {
+    if(box4.innerHTML=== "X") {
+      alert("player1 is the winner")
+    } else {
+      alert("player2 is the winner")
+    }
+  }
+};
 
 
 
