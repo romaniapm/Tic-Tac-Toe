@@ -17,13 +17,13 @@ box1.addEventListener("click", function(){
   checkWinner();
 });
 
+
 var box2 = document.getElementById("topcenter");
 box2.addEventListener("click", function(){
   box2.innerHTML = activeplayer.token;
   activePlayer();
   checkWinner();
 });
-
 
 
 var box3 = document.getElementById("topright");
@@ -42,14 +42,12 @@ box4.addEventListener("click", function(){
 });
 
 
-
 var box5 = document.getElementById("middlecenter");
 box5.addEventListener("click", function(){
   box5.innerHTML = activeplayer.token;
   activePlayer();
   checkWinner();
 });
-
 
 
 var box6 = document.getElementById("middleright");
@@ -60,7 +58,6 @@ box6.addEventListener("click", function(){
 });
 
 
-
 var box7 = document.getElementById("bottomleft");
 box7.addEventListener("click", function(){
   box7.innerHTML = activeplayer.token;
@@ -69,14 +66,12 @@ box7.addEventListener("click", function(){
 });
 
 
-
 var box8 = document.getElementById("bottomcenter");
 box8.addEventListener("click", function(){
   box8.innerHTML = activeplayer.token;
   activePlayer();
   checkWinner();
 });
-
 
 
 var box9 = document.getElementById("bottomright");
@@ -104,6 +99,61 @@ function checkWinner (){
       alert("player2 is the winner")
     }
   }
+// this is for the bottom row
+  if (box7.innerHTML === box8.innerHTML && box8.innerHTML === box9.innerHTML && box7.innerHTML.length > 0) {
+    if(box7.innerHTML=== "X") {
+      alert("player1 is the winner")
+    } else {
+      alert("player2 is the winner")
+    }
+  }
+
+  // this is for the first column
+  if (box1.innerHTML === box4.innerHTML && box4.innerHTML === box7.innerHTML && box1.innerHTML.length > 0) {
+    if(box7.innerHTML=== "X") {
+      alert("player1 is the winner")
+    } else {
+      alert("player2 is the winner")
+    }
+  }
+
+// this is for the second column
+  if (box2.innerHTML === box5.innerHTML && box5.innerHTML === box8.innerHTML && box2.innerHTML.length > 0) {
+    if(box2.innerHTML=== "X") {
+      alert("player1 is the winner")
+    } else {
+      alert("player2 is the winner")
+    }
+  }
+
+// this is for the second column
+  if (box3.innerHTML === box6.innerHTML && box6.innerHTML === box9.innerHTML && box3.innerHTML.length > 0) {
+    if(box3.innerHTML=== "X") {
+      alert("player1 is the winner")
+    } else {
+      alert("player2 is the winner")
+    }
+  }
+
+// this is for the one diagonal
+  if (box1.innerHTML === box5.innerHTML && box5.innerHTML === box9.innerHTML && box1.innerHTML.length > 0) {
+    if(box1.innerHTML=== "X") {
+      alert("player1 is the winner")
+    } else {
+      alert("player2 is the winner")
+    }
+  }
+
+
+// this is for the three diagonal
+  if (box3.innerHTML === box5.innerHTML && box5.innerHTML === box7.innerHTML && box3.innerHTML.length > 0) {
+    if(box3.innerHTML=== "X") {
+      alert("player1 is the winner")
+    } else {
+      alert("player2 is the winner")
+    }
+  }
+
 };
 
 
